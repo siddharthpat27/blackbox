@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ body {
+ padding: 0;
+ margin: 0;
+ background-color: #f5e9d3; /* Light cream color */
+ font-family: Arial, sans-serif;
+ }
+
+ header {
+ background-color: #d9a376; /* Brown color */
+ padding: 10px;
+ text-align: center;
+ }
+
+ header h1 {
+ margin: 0;
+ }
+
+ nav {
+ background-color: #8f6c4d; /* Dark brown color */
+ padding: 10px;
+ }
+
+ nav ul {
+ list-style-type: none;
+ padding: 0;
+ }
+
+ nav ul li {
+ display: inline;
+ margin-right: 10px;
+ }
+
+ nav ul li a {
+ color: white;
+ text-decoration: none;
+ }
+
+ main {
+ padding: 20px;
+ }
+
+ footer {
+ background-color: #8f6c4d; /* Dark brown color */
+ padding: 10px;
+ text-align: center;
+ color: white;
+ margin-top: 10px;
+ }
+
+ .recipe-card {
+ background-color: white;
+ border-radius: 5px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ padding: 20px;
+ margin-bottom: 20px;
+ }
+
+ .recipe-image {
+ width: 100%;
+ height: auto;
+ border-radius: 5px 5px 0 0;
+ }
+
+ .recipe-title {
+ font-size: 24px;
+ margin-top: 0;
+ margin-bottom: 10px;
+ }
+
+ .recipe-ingredients {
+ font-size: 18px;
+ margin-bottom: 10px;
+ }
+
+ .recipe-instructions {
+ font-size: 18px;
+ }
+
+ .contact-form {
+ background-color: white;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ .contact-form h2 {
+ margin-top: 0;
+ }
+
+ .contact-form input[type="text"],
+ .contact-form input[type="email"] {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 10px;
+ }
+
+ .contact-form textarea {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 10px;
+ }
+
+ .contact-form button {
+ background-color: #d9a376;
+ color: white;
+ padding: 10px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ }
+
+ .contact-form button:hover {
+ background-color: #8f6c4d;
+ }
+ </style>
+</head>
+<body>
+
+ <header>
+ <h1>Chinese Restaurant</h1>
+ </header>
+
+ <nav>
+ <ul>
+ <li><a href="#home">Home</a></li>
+ <li><a href="#menu">Menu</a></li>
+ <li><a href="#about">About</a></li>
+ </ul>
+ </nav>
+
+ <main>
+ <div class="recipe-card" id="recipe1">
+ <img src="recipe1.jpg" class="recipe-image" alt="Recipe 1">
+ <h2 class="recipe-title">Recipe 1</h2>
+ <p class="recipe-ingredients">Ingredients: 1, 2, 3</p>
+ <p class="recipe-instructions">Instructions: 1, 2, 3</p>
+ </div>
+
+ <div class="recipe-card" id="recipe2">
+ <img src="recipe2.jpg" class="recipe-image" alt="Recipe 2">
+ <h2 class="recipe-title">Recipe 2</h2>
+ <p class="recipe-ingredients">Ingredients: 1, 2, 3</p>
+ <p class="recipe-instructions">Instructions: 1, 2, 3</p>
+ </div>
+ </main>
+
+ <footer>
+ <p>&copy; 2023 Chinese Restaurant</p>
+ </footer>
+
+ <div class="contact-form">
+ <h2>Contact Us</h2>
+ <form>
+ <label for="name">Name:</label><br>
+ <input type="text" id="name" name="name"><br>
+ <label for="email">Email:</label><br>
+ <input type="email" id="email" name="email"><br>
+ <label for="message">Message:</label><br>
+ <textarea id="message" name="message"></textarea><br>
+ <button type="submit">Send</button>
+ </form>
+ </div>
+</body>
+</html>
